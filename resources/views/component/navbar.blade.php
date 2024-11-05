@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1">
     <div class="container-fluid">
         <div class="navbar-brand">
             <a class="nav-link" href="{{ route('home') }}">Logo</a>

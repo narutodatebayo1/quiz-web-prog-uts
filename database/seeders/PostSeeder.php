@@ -17,40 +17,40 @@ class PostSeeder extends Seeder
             'subject_id' => 1,
             'user_id' => 1,
             'description' => 'desc1',
-            'image' => '/minion.jpg'
+            'image' => '/ml.jpg'
         ]);
 
         Post::create([
             'subject_id' => 2,
             'user_id' => 1,
             'description' => 'desc2',
-            'image' => '/minion.jpg'
+            'image' => '/dl.jpg'
         ]);
         Post::create([
             'subject_id' => 3,
             'user_id' => 1,
             'description' => 'desc3',
-            'image' => '/minion.jpg'
+            'image' => '/nlp.png'
         ]);
 
         Post::create([
             'subject_id' => 4,
             'user_id' => 2,
             'description' => 'desc4',
-            'image' => '/minion.jpg'
+            'image' => '/ss.jpg'
         ]);
 
         Post::create([
             'subject_id' => 5,
             'user_id' => 2,
             'description' => 'desc5',
-            'image' => '/minion.jpg'
+            'image' => '/na.jpg'
         ]);
         Post::create([
             'subject_id' => 6,
             'user_id' => 2,
             'description' => 'desc6',
-            'image' => '/minion.jpg'
+            'image' => '/pnt.jpg'
         ]);
     }
 }

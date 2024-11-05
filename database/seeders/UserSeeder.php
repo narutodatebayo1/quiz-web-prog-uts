@@ -15,12 +15,14 @@ class UserSeeder extends Seeder
     {
         User::create([
             'name' => 'Sasa',
-            'specialty' => 'Data Science'
+            'specialty' => 'Data Science',
+            'image' => '/p1.jpg'
         ]);
 
         User::create([
             'name' => 'Sisi',
-            'specialty' => 'Network Security'
+            'specialty' => 'Network Security',
+            'image' => '/p2.jpg'
         ]);
     }
 }

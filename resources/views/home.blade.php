@@ -2,14 +2,14 @@
 
 @section('content')
 
-    <img src="/minion.jpg" class="w-100" />
-    {{-- {{ $postList }} --}}
+    <img src="/meeting.jpg" class="w-100" style="height: 20rem; object-fit: cover" />
+    
     <div class="p-3">
         @foreach($postList as $post)
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="/minion.jpg" class="img-fluid rounded-start" alt="...">
+                        <img src="{{ $post->image }}" class="img-fluid rounded-start w-100" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
