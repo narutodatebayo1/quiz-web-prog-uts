@@ -10,8 +10,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Category</a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="{{ route('category', ['name' => 1]) }}">Data Science</a></li>
-                    <li><a class="dropdown-item" href="{{ route('category', ['name' => 2]) }}">Network Security</a></li>
+                    <li><a class="dropdown-item" href="{{ route('category', ['id' => 1]) }}">Data Science</a></li>
+                    <li><a class="dropdown-item" href="{{ route('category', ['id' => 2]) }}">Network Security</a></li>
                 </ul>
             </li>
             <li class="nav-item">
