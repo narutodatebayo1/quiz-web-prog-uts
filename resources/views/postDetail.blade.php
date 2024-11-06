@@ -6,7 +6,9 @@
 
     <img src="{{ $post->image }}" class="w-100 p-3">
 
-    <p>{{ $post->created_at }} | {{ $user->name }}</p>
+    <p>{{ $subject->name }}</p>
+
+    <p>{{ $post->created_at->format('d M Y') }} | {{ $user->name }}</p>
 
     <p>{{ $post->description }}</p>
 
