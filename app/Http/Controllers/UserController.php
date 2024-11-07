@@ -15,7 +15,7 @@ class UserController extends Controller
 
     public function writersDetailPage($id) {
         $user = User::find($id);
-        $postList = Post::where('user_id', $id)->with('subject')->get();
+        $postList = Post::where('user_id', $id)->with('subject', 'user')->get();
         return view('writersDetail', ['user' => $user, 'postList' => $postList]);
     }
 }

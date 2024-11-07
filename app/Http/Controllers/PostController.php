@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function homePage() {
-        $postList = Post::with('subject')->get();
+        $postList = Post::with('subject', 'user')->get();
         return view('home', ['postList' => $postList]);
     }
 
@@ -21,7 +21,7 @@ class PostController extends Controller
     }
 
     public function popularPage() {
-        $postList = Post::with('subject')->paginate(3);
+        $postList = Post::with('subject', 'user')->paginate(3);
         return view('popular', ['postList' => $postList]);
     }
 }
