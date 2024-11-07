@@ -24,8 +24,10 @@
                 </div>
             </div>
         @endforeach
+        <div class="d-flex justify-content-center">
+            {{ $postList->links() }}
+        </div>
     </div>
 
-    {{ $postList->links() }}
 
 @endsection
